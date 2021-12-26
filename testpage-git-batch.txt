@@ -1,0 +1,12 @@
+choislove 최종 배포 방법
+
+bundle exec jekyll serve
+
+git add .
+
+git commit -m "commit message"
+
+./publish.sh
+
+참고페이지
+https://rainsound-k.github.io/jekyll-blog/2018/05/02/apply-custom-plugin.html
