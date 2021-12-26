@@ -1,0 +1,30 @@
+<div class="news">
+  <h2>photo</h2>
+  {% if site.photo  %}
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+        <tr>
+			<!--{% assign photo = site.photo | reverse %} 최신순서로 정렬할 때--> 
+		  {% assign photo = site.photo %}
+		  {% for item in photo limit: site.photo_limit %}
+			  <!--th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th-->
+			  <td>
+				{% if item.inline %}
+				  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+				{% else if item.img %}
+					{% assign image_path = item.img | prepend: 'assets/img/' %}
+					{% include figure.html 
+					  path=image_path 
+					  class="img-fluid z-dept-1 rounded"%}
+				{% else %}
+				  <a class="photo-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+				{% endif %}
+			  </td>
+		  {% endfor %}
+        </tr>
+      </table>
+    </div>
+  {% else %}
+    <p>No photo so far...</p>
+  {% endif %}
+</div>
