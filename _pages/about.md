@@ -8,6 +8,7 @@ profile:
   align: right
   image: choislove_logo.png
   address: >
+    <p>고해상도 드럼스캔</p><br/>
     <p>대표번호: 02)2269-8911</p>
     <p>팩스: 02)2269-8913</p><br/>
     <p>상담전화: 010-3265-8911</p><br/>
