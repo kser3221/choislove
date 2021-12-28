@@ -16,6 +16,6 @@ nav: true
 
 #### 웹하드 계정
 <ul>
-	<li>ID : test</li>
-	<li>PW : password</li>
+	<li>ID : chois8911</li>
+	<li>PW : 8911</li>
 </ul>

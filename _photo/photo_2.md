@@ -1,4 +1,4 @@
 ---
 layout: post
-img: drumscan_02.jpeg
+img: film_printing_machine.jpeg
 ---
